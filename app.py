@@ -11,15 +11,15 @@ st.dataframe(data)
 
 # Ansiedad
 st.subheader("Ansiedad en estudiantes")
-ansiedad = data["Anxiety"].value_counts()
+ansiedad = data["Do you have Anxiety?"].value_counts()
 st.bar_chart(ansiedad)
 
 # Depresión
 st.subheader("Depresión en estudiantes")
-depresion = data["Depression"].value_counts()
+depresion = data["Do you have Depression?"].value_counts()
 st.bar_chart(depresion)
 
 # Ataques de pánico
 st.subheader("Ataques de pánico en estudiantes")
-panico = data["Panic attack"].value_counts()
+panico = data["Do you have Panic attack?"].value_counts()
 st.bar_chart(panico)
