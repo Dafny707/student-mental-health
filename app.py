@@ -1,9 +1,10 @@
 import streamlit as st
-import os
 import pandas as pd
 
-st.write("Archivos en la carpeta:")
-st.write(os.listdir())
+st.title("Student Mental Health")
+st.write("Visualización de datos sobre la salud mental en estudiantes")
 
-data = pd.read_csv("student_mental_health.csv")
+data = pd.read_csv("Student Mental health.csv")
+
+st.subheader("Datos")
 st.dataframe(data)
